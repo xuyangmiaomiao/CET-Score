@@ -4,7 +4,7 @@
 * 这是一个查询 大学英语四六级成绩的类
 * 抓取自 http://www.chsi.com.cn/cet/
 * 2014年8月31日 19:02:40
-* lovefree13
+* lovefree13 
 */
 error_reporting(0);
 	class getCetScore{
