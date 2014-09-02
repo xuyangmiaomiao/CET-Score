@@ -2,9 +2,13 @@
 
 /**
 * 这是一个查询 大学英语四六级成绩的类
-* 抓取自 http://www.chsi.com.cn/cet/
-* 2014年8月31日 19:02:40
-* lovefree13 
+* 抓取自 		http://www.chsi.com.cn/cet/
+* @read 		http://www.xuyangjie.cn/the-study/getCetScore.html
+* @GitHub		https://github.com/xuyangmiaomiao/getCetScore
+* @webSite 		http://www.xuyangjie.cn/
+* @email		xuyangmiaomiao@gmail.com
+* @time 		2014年9月2日 19:55:18
+* @author		许杨淼淼
 */
 error_reporting(0);
 	class getCetScore{
@@ -103,6 +107,5 @@ error_reporting(0);
 
 	isset($_GET['num']) ? $zkzh = $_GET['num'] : die(json_encode(array('msg'=>'error','code'=>'400','content'=>'请输入准考证号')));
 	isset($_GET['name']) ? $xm = $_GET['name'] : die(json_encode(array('msg'=>'error','code'=>'400','content'=>'请输入姓名')));
-	$result = getCetScore::returnCetScore($zkzh, $xm);
-	echo $result;
+	echo getCetScore::returnCetScore($zkzh, $xm);
 ?>
